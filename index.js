@@ -96,7 +96,28 @@ const writeFile = fileContent => {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+// using inquirer to generate the .MD file
+const init = () => {
+
+    return inquirer.prompt(questions)
+    .then(readmeData => {
+        return readmeData;
+    })
+}
+init()
+.then(readmeData => {
+    console.log(readmeData);
+    return generateMarkdown(readmeData);
+})
+.then(pageMD => {
+    return writeFile(pageMD);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse.message);
+})
+.catch(err => {
+    console.log(err);
+})
 
 // Function call to initialize app
 init();
