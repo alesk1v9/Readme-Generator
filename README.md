@@ -24,7 +24,7 @@
   Answer the prompts to provide information about your project. Once all prompts are completed, the generator will create a README.md file in the project's root directory.
 
   ## Links
-  walkthrough video that demonstrates the functionality of the SVG logo maker and passing tests
+  walkthrough video 
   https://drive.google.com/file/d/1dw-fylGEfmldjLY1lI_Cqz_zx99T3-U-/view?usp=sharing
    
   
