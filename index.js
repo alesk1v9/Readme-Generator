@@ -38,33 +38,11 @@ const questions = [
         message: 'Which license will you use for your project?',
         choices: ['mit', 'GPLv2', 'Apache', 'no license']
     },
-    // Yes or no question if the user had contributions to his project, using the confirm type
-    {
-        type: 'confirm',
-        name: 'confirmContributers',
-        message: 'Will there be contributers to this application?',
-        default: true
-    },
-    // Function of what happens if you put yes, or else, for contributions
+    // Contributers
     {
         type: 'input',
-        name: 'contribute',
-        message: 'Please provide guidelines for contributing.',
-        when: ({ confirmContributers }) => {
-            if (confirmContributers) {
-                return true;
-            } else {
-                message: 'No contrinutions';
-                // return false;
-            }
-        },
-        validate: contributerInput => {
-            if (contributerInput) {
-                return true;
-            } else {
-                return false;
-            }
-        }
+        name: 'confirmContributers',
+        message: 'Will there be contributers to this application? ',
     },
     {
         type: 'input',
@@ -77,6 +55,11 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'What is your email address? (Required)',
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'What is your github link? (Required)',
     },
 
 
@@ -123,6 +106,3 @@ init()
 .catch(err => {
     console.log(err);
 })
-
-// // Function call to initialize app
-// init();

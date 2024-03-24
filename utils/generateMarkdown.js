@@ -70,7 +70,7 @@ function generateMarkdown(data) {
   
   ## Contributing
   
-  ${data.contributing}
+  ${data.confirmContributers}
 
   ## Tests
 
@@ -80,6 +80,7 @@ function generateMarkdown(data) {
   For any questions contact me using the following links:
   
   [Email: ${data.email}](mailto:${data.email})
+  [Github: ${data.github}]
 `;
 }
 
