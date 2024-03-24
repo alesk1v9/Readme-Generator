@@ -25,12 +25,12 @@
 
   ## Links
   walkthrough video that demonstrates the functionality of the SVG logo maker and passing tests
-  https://drive.google.com/file/d/1hJ-n4Gtdt5sneLoIv1lRWwbFjDk2gMLq/view
+  https://drive.google.com/file/d/1dw-fylGEfmldjLY1lI_Cqz_zx99T3-U-/view?usp=sharing
    
   
   ## Contributing
   
-  undefined
+  none
 
   ## Tests
 
@@ -40,3 +40,4 @@
   For any questions contact me using the following links:
   
   [Email: alexsanderrafael2022@gmail.com](mailto:alexsanderrafael2022@gmail.com)
+  [Github: https://github.com/alesk1v9]
